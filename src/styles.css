@@ -1,0 +1,38 @@
+:root { font-family: Arial, Helvetica, sans-serif; color: #25231f; background: #f4f1ea; font-synthesis: none; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+main { min-height: 100vh; padding: 30px 6vw 24px; background: radial-gradient(ellipse at 85% 15%, #e8e1d4 0, transparent 45%); }
+.brand { display: flex; align-items: center; gap: 10px; font-size: 15px; font-weight: 800; letter-spacing: 2px; }
+.brand-icon { font-size: 23px; }
+.brand-divider { margin: 0 7px; color: #bdb6aa; font-weight: 400; }
+.brand-subtitle { color: #777065; font-size: 12px; letter-spacing: .5px; font-weight: 500; }
+.page-content { max-width: 540px; margin: 55px auto 0; }
+.edition { margin: 0 0 15px 3px; font-size: 10px; font-weight: 700; letter-spacing: 2px; color: #7d7568; }
+.card { background: #fffefa; border: 1px solid #e4dfd5; border-radius: 18px; padding: 34px 38px 24px; box-shadow: 0 18px 50px #3329150b; }
+.card-heading { display: flex; justify-content: space-between; align-items: center; }
+.eyebrow { font-size: 10px; letter-spacing: 1.7px; font-weight: 700; color: #bd512e; }
+.basketball { color: #bf5834; font-size: 26px; line-height: 1; }
+h1 { font-size: clamp(28px, 6vw, 38px); line-height: 1.15; margin: 19px 0 14px; font-weight: 700; }
+.intro { color: #777168; font-size: 13px; line-height: 1.7; margin: 0 0 30px; }
+.rankings { display: grid; gap: 20px; }
+.ranking-row { display: flex; gap: 18px; align-items: center; }
+.rank-number { width: 43px; flex-shrink: 0; height: 55px; display: grid; place-items: center; border-radius: 8px; background: #f3ead8; color: #977234; font-size: 25px; font-weight: 700; }
+.rank-1 { color: #74797c; background: #edf0f0; }
+.rank-2 { color: #a46c47; background: #f5eae3; }
+.field { flex: 1; min-width: 0; }
+label { display: flex; align-items: baseline; justify-content: space-between; font-size: 12px; font-weight: 700; margin-bottom: 8px; }
+label span { font-size: 10px; font-weight: 400; color: #8b8379; }
+select { width: 100%; min-height: 45px; border: 1px solid #dcd7cf; border-radius: 7px; padding: 10px 12px; font: inherit; font-size: 13px; color: #39352f; background: #fffefa; cursor: pointer; }
+select:focus-visible, button:focus-visible { outline: 3px solid #d48459; outline-offset: 3px; }
+select:hover { border-color: #baaa99; }
+.status { display: flex; align-items: center; gap: 8px; font-size: 10px; color: #80786c; margin-top: 28px; border-top: 1px solid #eee9e0; padding-top: 18px; }
+.status-dot { width: 6px; height: 6px; border-radius: 50%; background: #beb5a7; }
+.status-dot.complete { background: #60825b; }
+.reset { display: block; margin: 18px auto 0; padding: 10px 24px; border: 1px solid #aaa; border-radius: 4px; background: #eee; font: inherit; font-size: 14px; color: #25231f; cursor: pointer; }
+.reset:hover { background: #ddd; }
+.reset:active { background: #ccc; }
+.result { margin-top: 18px; background: #f5f0e7; border-radius: 8px; padding: 16px 20px; }
+.result .eyebrow { margin: 0 0 10px; }
+.result ol { margin: 0; padding-left: 20px; font-size: 13px; line-height: 1.9; }
+footer { text-align: center; font-size: 11px; color: #8a8276; margin: 22px 0; }
+@media (max-width: 480px) { main { padding: 22px 18px; } .brand-subtitle, .brand-divider { display: none; } .page-content { margin-top: 38px; } .card { padding: 27px 23px 20px; } .ranking-row { gap: 12px; } label span { font-size: 9px; } }

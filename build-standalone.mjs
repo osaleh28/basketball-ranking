@@ -1,4 +1,4 @@
-import { readFileSync, writeFileSync } from 'node:fs';
+import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 
 const styles = readFileSync(new URL('./src/styles.css', import.meta.url), 'utf8');
 const script = readFileSync(new URL('./standalone.js', import.meta.url), 'utf8');
@@ -19,3 +19,6 @@ const html = `<!doctype html>
 </html>
 `;
 writeFileSync(new URL('./basketball-card.html', import.meta.url), html, 'utf8');
+mkdirSync(new URL('./docs/', import.meta.url), { recursive: true });
+writeFileSync(new URL('./docs/index.html', import.meta.url), html, 'utf8');
+writeFileSync(new URL('./docs/.nojekyll', import.meta.url), '', 'utf8');

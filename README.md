@@ -33,3 +33,9 @@ After changing `standalone.js` or the styles, regenerate the standalone page wit
 ```sh
 node build-standalone.mjs
 ```
+
+## Public webpage
+
+The standalone build also creates `docs/index.html` for GitHub Pages. In the repository's Settings > Pages, select "Deploy from a branch", the `main` branch, and the `/docs` folder, then save.
+
+For `osaleh28/basketball-ranking`, the expected page URL after deployment is https://osaleh28.github.io/basketball-ranking/.
